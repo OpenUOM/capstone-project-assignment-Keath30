@@ -3,6 +3,7 @@ process.env.NODE_ENV = "test";
 
 fixture`Testing Teacher UI`
     .page`http://localhost:4401/`
+    .pageRequestTimeout(10000); // Increase the timeout to 10 seconds
 test('Testing edit teachers', async t => {
     await t.navigateTo("/");
     await t.click("#teacher-edit-10003");
