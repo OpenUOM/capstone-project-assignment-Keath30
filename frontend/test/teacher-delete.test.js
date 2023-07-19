@@ -3,7 +3,7 @@ process.env.NODE_ENV = "test";
 
 fixture`Testing Student UI`
     .page`http://localhost:4401/`
-    .pageRequestTimeout(10000); // Increase the timeout to 10 seconds
+    
   
 
 test('Testing delete teachers', async t => {
